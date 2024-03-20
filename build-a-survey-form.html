@@ -1,0 +1,61 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Survey Form</title>
+    <meta charset="UTF-8"/>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill in the Survey form below</p>
+    <form id="survey-form">
+      <label id="name-label">Enter your name: </label><input id="name" type="text" placeholder="Name" required/>
+      <label id="email-label">Enter your E-mail:</label> <input id="email" type="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" placeholder="Email" required />
+      <label id="number-label">Enter your age: </label><input type="number" id="number" pattern="[0-9]" min="13" max="120" max-length="3" placeholder="13"/><br/>
+      <legend>How did you hear about us?
+      <select id="dropdown">
+        <option>Google</option>
+        <option>Youtube</option>
+        <option>Facebook</option>
+      </select>
+      </legend><br/>
+     <fieldset>
+       <legend>What is your current occupation?</legend>
+      <input type="radio" name="radio-option" value="student"><label>Student</label><br/>
+      <input type="radio" name="radio-option" value="employed"/><label>Employed</label><br/>
+      <input type="radio" name="radio-option" value="unemployed"/><label>Unemployed</label><br/>
+      </fieldset>
+      <fieldset>
+        <legend>What skills do you want to learn?</legend>
+      <input type="checkbox" id="course1" value="html"/><label for="course1">HTML</label>
+      <input type="checkbox" id="course2" value="css"/><label for="course2">CSS</label>
+      <input type="checkbox" id="course3" value="javascript"/><label for="course3">JavaScript</label>
+      <input type="checkbox" id="course4" value="php"/><label for="course4">PHP</label>
+      </fieldset>
+  <textarea rows="4" cols="100%" placeholder="Describe yourself here..."></textarea>
+  <input type="submit" id="submit" />
+
+    </form>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+input[id="name"],input[id="email"]{
+  display:block;
+}
+label[id="number-label"]{
+  display: inline
+}
+input[type="submit"] {
+  display: block;
+  margin: auto;
+}
+
+
+** end of undefined **
+
